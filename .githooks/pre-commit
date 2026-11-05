@@ -1,0 +1,10 @@
+#!/bin/sh
+# Hook Git Pre-Commit — Shift-Left DevOps Quality Gate (Mosquée de la Paix Châtellerault)
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+echo "🛡️  [Pre-Commit DevOps] Exécution du Linter, des Tests et du Build..."
+npm run ci
+if [ $? -ne 0 ]; then
+  echo "❌ [Pre-Commit] Les tests ont échoué ! Corrigez les erreurs avant de commiter."
+  exit 1
+fi
+echo "✅ [Pre-Commit] Tous les tests sont au vert !"
