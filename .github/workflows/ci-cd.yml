@@ -1,0 +1,40 @@
+name: CI/CD — Mosquée de la Paix (As-Sâlam) Châtellerault
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality-and-deploy:
+    name: Vérification Qualité, Tests Automatisés & Déploiement Netlify
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Récupération du code source
+        uses: actions/checkout@v4
+
+      - name: 2. Installation de Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 3. Installation des dépendances
+        run: npm install
+
+      - name: 4. Vérification syntaxique (Lint JS & Serverless Functions)
+        run: npm run lint
+
+      - name: 5. Exécution des tests automatisés (Horaires Mawaqit, Photos, RIB & Palette)
+        run: npm test
+
+      - name: 6. Build du dossier de production (public/)
+        run: npm run build
+
+      - name: 7. Déploiement continu vers Netlify Production (si NETLIFY_AUTH_TOKEN est défini)
+        if: github.ref == 'refs/heads/main' && env.NETLIFY_AUTH_TOKEN != ''
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: 'd2b5d82d-e718-4cbc-8a28-0adf3844860e'
+        run: npx netlify-cli deploy --dir=public --functions=netlify/functions --prod --message="Deploy CI/CD GitHub Actions (${{ github.sha }})"

@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mosquée de la Paix (As-Sâlam) — مسجد السلام | Châtellerault (86100)</title>
+    <meta
+      name="description"
+      content="Site officiel de la Mosquée de la Paix (As-Sâlam — مسجد السلام) de Châtellerault (60 rue Paul Painlevé, 86100). Horaires de prière Mawaqit en temps réel, histoire des bâtisseurs (43 photos d'archives), Institut d'arabe et de Coran, et dons."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 1. Bandeau supérieur de cour de mosquée : Hégire, Adresse & Téléphone -->
+    <div class="top-courtyard-bar">
+      <div class="top-bar-inner">
+        <div class="top-bar-left">
+          <span id="gregorianDateDisplay">Chargement de la date...</span>
+          <span class="top-divider" aria-hidden="true"></span>
+          <span class="hijri-badge" id="hijriDateDisplay">Calendrier Hégirien</span>
+        </div>
+        <div class="top-bar-right">
+          <span>60 rue Paul Painlevé, 86100 Châtellerault</span>
+          <span class="top-divider" aria-hidden="true"></span>
+          <a href="tel:+33549219697" style="color: var(--gold-pale); font-weight: 700; text-decoration: none;">
+            05 49 21 96 97
+          </a>
+          <span class="top-divider" aria-hidden="true"></span>
+          <span>Jumu'a : <strong id="topJumuaTime" style="color: var(--gold-pale);">13:00</strong></span>
+          <span class="top-divider" aria-hidden="true"></span>
+          <a href="admin.html" style="color: var(--gold-pale); text-decoration: underline;">Espace Gestion</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bandeau d'annonce Mawaqit -->
+    <div class="urgent-banner" id="urgentBannerWrap">
+      <div class="urgent-banner-inner">
+        <div>
+          <span class="urgent-tag" id="urgentBannerTag">MOSQUÉE VERTE (ACTE 2)</span>
+          <span id="urgentBannerText">
+            Panneaux solaires et batteries supplémentaires pour l'autonomie énergétique de la Mosquée de la Paix.
+          </span>
+        </div>
+        <a
+          href="https://mawaqit.net/fr/m/essalem-chatellerault"
+          target="_blank"
+          rel="noopener"
+          style="font-family: var(--font-serif); font-weight: 700; color: var(--emerald-royal);"
+        >
+          Consulter Mawaqit Officiel
+        </a>
+      </div>
+    </div>
+
+    <!-- 2. En-tête Architectural avec la Colombe Calligraphiée -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#" class="brand-lockup" aria-label="Accueil Mosquée de la Paix Châtellerault">
+          <img
+            src="assets/logo-mosquee-paix.png"
+            alt="Logo officiel Mosquée de la Paix - مسجد السلام - 60 rue Paul Painlevé 86100 Châtellerault"
+            class="brand-logo-img"
+          />
+          <div class="brand-text-col">
+            <div class="brand-title-row">
+              <span class="brand-name-fr">Mosquée de la Paix</span>
+              <span class="brand-name-ar" lang="ar" dir="rtl">مسجد السلام</span>
+            </div>
+            <span class="brand-sub">Association Islamique de Châtellerault • 60 rue Paul Painlevé</span>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="#horaires" class="nav-link">Horaires Mawaqit</a>
+          <a href="#visite" class="nav-link">Le Sanctuaire</a>
+          <a href="#histoire" class="nav-link">Histoire &amp; Travaux (43 photos)</a>
+          <a href="#annonces" class="nav-link">Annonces</a>
+          <a href="#dons" class="nav-link">Sadaqa Jâriya</a>
+          <a href="#institut" class="nav-link">Institut As-Sâlam</a>
+          <a href="#acces" class="nav-link">Accès &amp; Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="btn btn-emerald" id="openTvModeBtn" title="Afficher les horaires en plein écran">
+            Mode Écran Mosquée
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 3. HERO SANCTUAIRE ORIENTAL : Calligraphie, Histoire & Mihrab Mawaqit -->
+      <section class="hero-sanctuary" id="horaires">
+        <div class="container hero-grid">
+          <!-- Colonne Gauche : Bismillah, Présentation & Diptyque Architectural -->
+          <div>
+            <div class="bismillah-cartouche">
+              <span class="bismillah-arabic" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+              <span class="bismillah-fr">Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux</span>
+            </div>
+
+            <h1 class="hero-title">
+              Bienvenue à la <em>Mosquée de la Paix</em> (As-Sâlam) de Châtellerault
+            </h1>
+
+            <p class="hero-lead">
+              Édifiée au <strong>60 rue / avenue Paul Painlevé à Châtellerault</strong>, la Mosquée de la Paix
+              (<em>Masjid As-Sâlam — مسجد السلام</em>) est un sanctuaire de prière, d'étude et de fraternité bâti par
+              l'engagement des fidèles châtelleraudais depuis 1982.
+            </p>
+
+            <!-- Bandeau temps réel de la prochaine prière -->
+            <div class="next-prayer-strip" role="status" aria-live="polite">
+              <div>
+                <div class="np-label">Prochaine prière à Châtellerault (Mawaqit)</div>
+                <div class="np-name" id="nextPrayerName">Chargement...</div>
+                <div class="np-iqama-note" id="nextPrayerTimeNote">Synchronisation Mawaqit...</div>
+              </div>
+              <div class="np-countdown-box">
+                <div class="np-timer" id="nextPrayerCountdown">--:--:--</div>
+                <div class="np-iqama-note">Compte à rebours</div>
+              </div>
+            </div>
+
+            <!-- Diptyque Architectural : Vraies photos de la Mosquée de la Paix -->
+            <div class="hero-photo-diptych">
+              <div
+                class="arch-photo-frame"
+                onclick="openPhotoLightbox('assets/salle-priere.png', 'Grande salle de prière de la Mosquée de la Paix (As-Sâlam) — Mihrab calligraphié, charpente en bois et colonnes blanches')"
+              >
+                <img
+                  src="assets/salle-priere.png"
+                  alt="Intérieur de la salle de prière de la Mosquée de la Paix à Châtellerault avec le Mihrab et les colonnes"
+                />
+                <div class="arch-frame-caption">La Grande Salle de Prière &amp; le Mihrab</div>
+              </div>
+              <div
+                class="arch-photo-frame"
+                onclick="openPhotoLightbox('assets/portail-exterieur.png', 'Portail principal de la Mosquée de la Paix (مسجد السلام) — 60 rue Paul Painlevé, 86100 Châtellerault')"
+              >
+                <img
+                  src="assets/portail-exterieur.png"
+                  alt="Arche et portail extérieur de la Mosquée de la Paix (مسجد السلام) à Châtellerault"
+                />
+                <div class="arch-frame-caption">Portail « Mosquée de la Paix — مسجد السلام »</div>
+              </div>
+            </div>
+
+            <div class="hero-cta-row">
+              <a href="#dons" class="btn btn-gold">Soutenir la Mosquée (Sadaqa Jâriya)</a>
+              <a href="#histoire" class="btn btn-outline-gold">Découvrir l'Histoire &amp; les 43 Photos</a>
+            </div>
+          </div>
+
+          <!-- Colonne Droite : Carte Sanctuaire Mihrab (Horaires Mawaqit du Jour) -->
+          <aside class="mihrab-prayer-card" aria-label="Horaires des prières du jour à Châtellerault">
+            <div class="mihrab-arch-header">
+              <!-- Couronnement d'Arche Andalouse en SVG fin -->
+              <svg class="mihrab-arch-svg" viewBox="0 0 140 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 25C32 25 54 14 70 2C86 14 108 25 136 25" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="70" cy="14" r="3" fill="currentColor" />
+              </svg>
+              <img
+                src="assets/logo-mosquee-paix.png"
+                alt="Emblème Colombe Mosquée de la Paix"
+                class="mihrab-dove-mini"
+              />
+              <div class="mihrab-arabic-title" lang="ar" dir="rtl">مواقيت الصلاة — مسجد السلام</div>
+              <h2 class="mihrab-city-sub">Horaires de Prière à Châtellerault</h2>
+              <p class="mihrab-date-line">
+                Synchronisé avec
+                <a
+                  href="https://mawaqit.net/fr/m/essalem-chatellerault"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: var(--emerald-royal); font-weight: 700; text-decoration: underline;"
+                  >Mawaqit Officiel (As-Sâlam)</a
+                >
+              </p>
+            </div>
+
+            <div class="prayer-table-head">
+              <span>Prière (Salât)</span>
+              <span style="text-align: center;">Adhan</span>
+              <span style="text-align: right;">Iqama</span>
+            </div>
+
+            <div class="prayer-rows-list" id="prayerRowsContainer">
+              <div class="prayer-row" data-prayer="Fajr">
+                <div class="pr-name-wrap">
+                  <span class="pr-name-fr">Al-Fajr</span>
+                  <span class="pr-name-ar" lang="ar">الفجر</span>
+                </div>
+                <span class="pr-adhan" id="time-Fajr">06:33</span>
+                <span class="pr-iqama" id="iqama-Fajr">+10 min</span>
+              </div>
+
+              <div class="prayer-row" data-prayer="Sunrise">
+                <div class="pr-name-wrap">
+                  <span class="pr-name-fr">Chourouk</span>
+                  <span class="pr-name-ar" lang="ar">الشروق</span>
+                </div>
+                <span class="pr-adhan" id="time-Sunrise">07:48</span>
+                <span class="pr-iqama" id="iqama-Sunrise">Lever</span>
+              </div>
+
+              <div class="prayer-row" data-prayer="Dhuhr">
+                <div class="pr-name-wrap">
+                  <span class="pr-name-fr">Ad-Dhuhr</span>
+                  <span class="pr-name-ar" lang="ar">الظهر</span>
+                </div>
+                <span class="pr-adhan" id="time-Dhuhr">12:46</span>
+                <span class="pr-iqama" id="iqama-Dhuhr">+10 min</span>
+              </div>
+
+              <div class="prayer-row" data-prayer="Asr">
+                <div class="pr-name-wrap">
+                  <span class="pr-name-fr">Al-Asr</span>
+                  <span class="pr-name-ar" lang="ar">العصر</span>
+                </div>
+                <span class="pr-adhan" id="time-Asr">15:12</span>
+                <span class="pr-iqama" id="iqama-Asr">+10 min</span>
+              </div>
+
+              <div class="prayer-row" data-prayer="Maghrib">
+                <div class="pr-name-wrap">
+                  <span class="pr-name-fr">Al-Maghrib</span>
+                  <span class="pr-name-ar" lang="ar">المغرب</span>
+                </div>
+                <span class="pr-adhan" id="time-Maghrib">17:40</span>
+                <span class="pr-iqama" id="iqama-Maghrib">+5 min</span>
+              </div>
+
+              <div class="prayer-row" data-prayer="Isha">
+                <div class="pr-name-wrap">
+                  <span class="pr-name-fr">Al-Isha</span>
+                  <span class="pr-name-ar" lang="ar">العشاء</span>
+                </div>
+                <span class="pr-adhan" id="time-Isha">18:49</span>
+                <span class="pr-iqama" id="iqama-Isha">+10 min</span>
+              </div>
+            </div>
+
+            <div class="jumua-highlight-bar">
+              <div>
+                <div class="jumua-title">Prière du Vendredi (Al-Jumu'a — الجمعة)</div>
+                <div class="jumua-sub">Prêche (Khoutba) en français et en arabe</div>
+              </div>
+              <span class="jumua-time" id="cardJumuaTime">13:00</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 4. Ruban des Équipements Officiels (Icônes architecturales SVG fines) -->
+      <section class="facilities-ribbon" aria-label="Services et équipements de la mosquée">
+        <div class="container">
+          <div class="facilities-grid">
+            <div class="facility-item">
+              <div class="facility-svg-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M12 3C8 7 6 10 6 14v7h12v-7c0-4-2-7-6-11z" />
+                  <path d="M9 21v-5a3 3 0 0 1 6 0v5" />
+                </svg>
+              </div>
+              <div>
+                <strong>Grande Salle &amp; Espace Sœurs</strong>
+                <span>Salle de prière principale (600 m²) et salle dédiée aux femmes</span>
+              </div>
+            </div>
+
+            <div class="facility-item">
+              <div class="facility-svg-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 3" />
+                </svg>
+              </div>
+              <div>
+                <strong>Ouverture Quotidienne</strong>
+                <span>Ouverte 30 min avant chaque Salât pour les 5 prières</span>
+              </div>
+            </div>
+
+            <div class="facility-item">
+              <div class="facility-svg-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M12 2L15 9l7 3-7 3-3 7-3-7-7-3 7-3z" />
+                </svg>
+              </div>
+              <div>
+                <strong>Accès PMR &amp; Ablutions</strong>
+                <span>Accès plain-pied, salles d'ablutions Hommes &amp; Femmes</span>
+              </div>
+            </div>
+
+            <div class="facility-item">
+              <div class="facility-svg-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                </svg>
+              </div>
+              <div>
+                <strong>Khoutba du Vendredi</strong>
+                <span>Prêche et prière de Jumu'a chaque vendredi à <strong id="facilityJumua" style="display:inline;">13:00</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. SECTION VISITE ARCHITECTURALE : Découvrir la Mosquée de la Paix -->
+      <section class="section-block" id="visite">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-arabic-calligraphy" lang="ar" dir="rtl">عمارة المسجد وروحانيته</span>
+            <h2 class="section-title">Au cœur de la Mosquée de la Paix</h2>
+            <p class="section-desc">
+              Un espace lumineux et apaisant, conçu pour accueillir les fidèles de Châtellerault et du Grand
+              Châtelleraudais dans les meilleures conditions de recueillement.
+            </p>
+            <div class="arabesque-divider" aria-hidden="true">
+              <svg class="arabesque-khatam-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="5" y="5" width="14" height="14" />
+                <rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="sanctuary-split">
+            <!-- Grande Carte : Salle de Prière et Mihrab -->
+            <article class="sanctuary-card-large">
+              <img
+                src="assets/salle-priere.png"
+                alt="Vue panoramique de la salle de prière de la Mosquée de la Paix à Châtellerault"
+                onclick="openPhotoLightbox('assets/salle-priere.png', 'La Grande Salle de Prière (600 m²) — Mosquée de la Paix (As-Sâlam) Châtellerault')"
+              />
+              <div class="sanctuary-card-body">
+                <h3>La Grande Salle de Prière (600 m²) &amp; le Mihrab</h3>
+                <p>
+                  Sous une charpente en bois cintrée soutenue par des colonnes blanches élancées, la grande salle de
+                  prière s'ouvre sur un <strong>Mihrab d'inspiration andalouse et maghrébine</strong> orné des
+                  calligraphies d'Allah (الله) et du Prophète Muhammad (ﷺ), entouré de portes en bois sculpté et d'un
+                  tapis grenat aligné pour les rangs de prière.
+                </p>
+              </div>
+            </article>
+
+            <!-- Colonne Droite : Portail en Marbre Vert + Emblème Colombe -->
+            <div class="sanctuary-side-col">
+              <article class="sanctuary-small-card">
+                <img
+                  src="assets/portail-exterieur.png"
+                  alt="Portail monumental en marbre vert de la Mosquée de la Paix à Châtellerault"
+                  class="portal-img"
+                  onclick="openPhotoLightbox('assets/portail-exterieur.png', 'Le Portail en Marbre Vert — 60 rue Paul Painlevé, 86100 Châtellerault')"
+                />
+                <h3>L'Arche d'Entrée &amp; le Fronton « مسجد السلام »</h3>
+                <p>
+                  Sur l'avenue Paul Painlevé, le portail en marbre vert accueille les fidèles sous une grande arche
+                  frappée de l'inscription bilingue : <strong>« Mosquée de la Paix — مسجد السلام »</strong>.
+                </p>
+              </article>
+
+              <article
+                class="dove-emblem-card"
+                onclick="openPhotoLightbox('assets/logo-mosquee-paix.png', 'Emblème officiel de la Mosquée de la Paix — Colombe calligraphiée portant le rameau d’olivier')"
+              >
+                <img src="assets/logo-mosquee-paix.png" alt="Logo Colombe Mosquée de la Paix" />
+                <div>
+                  <h4>La Colombe Calligraphiée</h4>
+                  <p>
+                    Dessinée par les lettres arabes de <strong>« مسجد السلام »</strong> (<em>Masjid As-Sâlam</em>), la
+                    colombe au rameau d'olivier incarne la vocation de paix et de fraternité de la mosquée à
+                    Châtellerault.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. SECTION HISTOIRE AUTHENTIQUE & ARCHIVES DES TRAVAUX (43 PHOTOS) -->
+      <section class="section-block bg-warm" id="histoire">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-arabic-calligraphy" lang="ar" dir="rtl">تاريخ المسجد والأشغال الكبرى</span>
+            <h2 class="section-title">L'Histoire de la Mosquée &amp; le Chantier des Bâtisseurs</h2>
+            <p class="section-desc">
+              De la première salle prêtée par la paroisse en 1982 jusqu'à la transformation de l'ancien garage d'autobus
+              Mallet au 60 avenue Paul Painlevé par les bénévoles châtelleraudais.
+            </p>
+            <div class="arabesque-divider" aria-hidden="true">
+              <svg class="arabesque-khatam-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="5" y="5" width="14" height="14" />
+                <rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Chronique Historique + Archive Garage Mallet & Plans 2013 -->
+          <div class="history-chronicle-grid">
+            <div class="history-timeline-ledger">
+              <div class="history-step-row">
+                <div class="history-step-era">1982</div>
+                <div>
+                  <h3 class="history-step-title">La main tendue de la Paroisse de Châtellerault</h3>
+                  <p class="history-step-text">
+                    À l'origine, la paroisse de Châtellerault prête fraternellement une petite salle rue de la Paroisse
+                    aux musulmans de la ville pour leur permettre d'accomplir leurs prières dans la dignité.
+                  </p>
+                </div>
+              </div>
+
+              <div class="history-step-row">
+                <div class="history-step-era">Années 1990</div>
+                <div>
+                  <h3 class="history-step-title">De la rue de la Paroisse au quartier d'Ozon</h3>
+                  <p class="history-step-text">
+                    Face à l'augmentation du nombre de fidèles, la municipalité met à disposition un local plus spacieux
+                    dans le quartier d'Ozon, accueillant la communauté pendant plusieurs années.
+                  </p>
+                </div>
+              </div>
+
+              <div class="history-step-row">
+                <div class="history-step-era">Acquisition</div>
+                <div>
+                  <h3 class="history-step-title">L'achat de l'ancien garage d'autobus « Éts Mallet »</h3>
+                  <p class="history-step-text">
+                    Grâce à la mobilisation et aux dons des fidèles, l'association acquiert l'ancien dépôt d'autobus
+                    situé au <strong>60 avenue Paul Painlevé</strong> pour y fonder durablement la Mosquée de la Paix.
+                  </p>
+                </div>
+              </div>
+
+              <div class="history-step-row">
+                <div class="history-step-era">Avril 2013</div>
+                <div>
+                  <h3 class="history-step-title">Les Grands Travaux de Réhabilitation (600 m² &amp; Piliers)</h3>
+                  <p class="history-step-text">
+                    Plans d'architecte (APD Avril 2013), coffrage et coulage manuel des colonnes en béton, chape de
+                    600 m² et pose de la charpente cintrée : toutes les générations s'unissent sur le chantier.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Colonne Droite : Photo d'Archive Éts Mallet + les 2 Plans d'Architecte Avril 2013 -->
+            <div class="history-side-showcase">
+              <article
+                class="archive-photo-card"
+                onclick="openPhotoLightbox('assets/archive-garage-mallet.jpg', 'Archive historique : Le portail de la Mosquée de la Paix devant l’ancienne façade « Éts Mallet » au 60 avenue Paul Painlevé')"
+              >
+                <img
+                  src="assets/archive-garage-mallet.jpg"
+                  alt="Photo d'archive de la Mosquée de la Paix avec l'enseigne de l'ancien garage Éts Mallet"
+                />
+                <div class="archive-caption">
+                  <strong>De l'ancien dépôt « Éts Mallet » à la Mosquée</strong>
+                  <p>
+                    Photographie d'archive montrant le portail en marbre vert érigé devant la façade d'origine des
+                    <em>Établissements Mallet</em>, avant la réhabilitation complète.
+                  </p>
+                </div>
+              </article>
+
+              <div class="blueprints-duo-grid">
+                <div
+                  class="blueprint-mini-card"
+                  onclick="openPhotoLightbox('assets/plan-architecte-100.jpeg', 'Plan d’Architecte (Avril 2013 - Échelle 1/100) — Réhabilitation de la Grande Salle de Prière')"
+                >
+                  <img
+                    src="assets/plan-architecte-100.jpeg"
+                    alt="Plan d'architecte Avril 2013 échelle 1/100 de la Mosquée de Châtellerault"
+                  />
+                  <span>Plan d'Architecte 1/100 (Avril 2013)</span>
+                </div>
+
+                <div
+                  class="blueprint-mini-card"
+                  onclick="openPhotoLightbox('assets/plan-architecte-200.jpeg', 'Plan d’Architecte (Avril 2013 - Échelle 1/200) — Vue d’ensemble du projet de la Mosquée de la Paix')"
+                >
+                  <img
+                    src="assets/plan-architecte-200.jpeg"
+                    alt="Plan d'architecte Avril 2013 échelle 1/200 de la Mosquée de Châtellerault"
+                  />
+                  <span>Plan d'Architecte 1/200 (Vue d'ensemble)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GALERIE COMPLÈTE DES 43 PHOTOS DES TRAVAUX -->
+          <div class="chantier-gallery-box">
+            <div class="chantier-gallery-header">
+              <div>
+                <h3 style="font-family: var(--font-serif); font-size: 1.85rem; color: var(--emerald-royal);">
+                  Album Historique : Les Bâtisseurs Bénévoles en Action (43 Photos)
+                </h3>
+                <p style="color: var(--ink-body); font-size: 0.94rem; max-width: 660px; margin-top: 4px;">
+                  Cliquez sur une photographie pour l'ouvrir en grand format et parcourez l'ensemble du chantier avec
+                  les touches directionnelles de votre clavier.
+                </p>
+              </div>
+              <div class="chantier-gallery-controls">
+                <button type="button" class="btn btn-emerald" id="openChantierSlideshowBtn">
+                  Lancer le Diaporama (43 photos)
+                </button>
+                <button type="button" class="btn btn-alabaster" id="toggleAllChantierPhotosBtn">
+                  Voir les 43 photos des travaux
+                </button>
+              </div>
+            </div>
+
+            <div class="chantier-photo-grid" id="chantierPhotoGrid">
+              <!-- Injecté dynamiquement par app.js avec les 43 photos chantier-01 à chantier-43 -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. SECTION ACTUALITÉS, PROJETS & ANNONCES OFFICIELLES MAWAQIT -->
+      <section class="section-block" id="annonces">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-arabic-calligraphy" lang="ar" dir="rtl">أخبار المسجد والأنشطة</span>
+            <h2 class="section-title">Les Annonces de la Mosquée As-Sâlam</h2>
+            <p class="section-desc">
+              Retrouvez les communications officielles de Mawaqit et du bureau de l'association : projet Mosquée Verte
+              (panneaux solaires), assemblées générales, conférences et horaires saisonniers.
+            </p>
+            <div class="arabesque-divider" aria-hidden="true">
+              <svg class="arabesque-khatam-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="5" y="5" width="14" height="14" />
+                <rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="announcements-ledger" id="announcementsContainer">
+            <!-- Injecté dynamiquement par app.js depuis data.json -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. SECTION SADAQA JÂRIYA : FAIRE UN DON & SIMULATEUR FISCAL 66% -->
+      <section class="section-block bg-cedar" id="dons">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-arabic-calligraphy" lang="ar" dir="rtl">صدقة جارية — ساهموا في بيت الله</span>
+            <h2 class="section-title" id="projectFundTitle">
+              Soutenir la Mosquée de la Paix (Sadaqa Jâriya)
+            </h2>
+            <p class="section-desc" id="projectFundDesc">
+              « Celui qui construit une mosquée pour Allah, Allah lui construit son équivalent dans le Paradis. »
+              (Hadith authentique). Vos dons assurent le fonctionnement quotidien et le projet Mosquée Verte.
+            </p>
+            <div class="arabesque-divider" aria-hidden="true">
+              <svg class="arabesque-khatam-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="5" y="5" width="14" height="14" />
+                <rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="sadaqa-layout">
+            <!-- Colonne Gauche : Avancement & RIB Officiel BPVF -->
+            <div class="project-progress-card">
+              <h3 style="font-family: var(--font-serif); font-size: 1.85rem; color: var(--gold-pale); margin-bottom: 8px;">
+                Chaque contribution soutient la maison d'Allah
+              </h3>
+              <p style="color: rgba(247, 242, 231, 0.86); font-size: 0.94rem;">
+                La Mosquée de la Paix vit exclusivement grâce à la générosité des fidèles : frais d'énergie, entretien
+                de la grande salle de 600 m², panneaux solaires (Mosquée Verte Acte 2) et école de langue arabe.
+              </p>
+
+              <div class="progress-numbers">
+                <div>
+                  <span style="display: block; font-size: 0.8rem; color: rgba(247, 242, 231, 0.75);">Collecté :</span>
+                  <span class="progress-raised" id="projectRaisedDisplay">18 450 €</span>
+                </div>
+                <div class="progress-goal">
+                  Objectif : <strong id="projectGoalDisplay" style="color: var(--gold-pale);">35 000 €</strong>
+                </div>
+              </div>
+
+              <div class="progress-track">
+                <div class="progress-fill" id="projectProgressBar" style="width: 52%;"></div>
+              </div>
+
+              <!-- Coordonnées bancaires officielles (RIB Banque Populaire Val de France) -->
+              <div class="official-rib-box">
+                <div class="rib-header-row">
+                  <strong>RIB Officiel — Association Islamique de Châtellerault</strong>
+                  <span>Banque Populaire (BPVF)</span>
+                </div>
+                <div class="rib-iban-line">
+                  <code id="officialIbanText">FR76 1870 7007 4030 4217 3529 813</code>
+                  <button type="button" class="btn-copy-iban" id="copyIbanBtn">Copier l'IBAN</button>
+                </div>
+                <div style="font-size: 0.82rem; color: rgba(247, 242, 231, 0.82);">
+                  Code BIC : <strong>CCBPFRPPVER</strong> • Domiciliation : BPVF Châtellerault (86100)
+                </div>
+              </div>
+            </div>
+
+            <!-- Colonne Droite : Simulateur de Don & Déduction Fiscale -->
+            <div class="donation-simulator-card">
+              <h3 style="font-family: var(--font-serif); font-size: 1.65rem; color: var(--emerald-royal); margin-bottom: 4px;">
+                Simulateur de Don &amp; Réduction d'Impôt (66 %)
+              </h3>
+              <p style="font-size: 0.9rem; color: var(--ink-body);">
+                Choisissez un montant ponctuel ou mensuel pour calculer votre coût réel après déduction fiscale.
+              </p>
+
+              <div class="amount-pills-row" role="group" aria-label="Montants de don suggérés">
+                <button type="button" class="amount-btn" data-amount="20">20 €</button>
+                <button type="button" class="amount-btn" data-amount="50">50 €</button>
+                <button type="button" class="amount-btn active" data-amount="100">100 €</button>
+                <button type="button" class="amount-btn" data-amount="200">200 €</button>
+              </div>
+
+              <div style="margin-bottom: 14px;">
+                <label for="customDonationInput" class="field-label">
+                  Ou saisissez un montant libre (en €) :
+                </label>
+                <input
+                  type="number"
+                  id="customDonationInput"
+                  class="field-input"
+                  min="5"
+                  max="10000"
+                  value="100"
+                />
+              </div>
+
+              <div class="tax-receipt-box" id="taxDeductionBox">
+                Un don de <strong>100 €</strong> ne vous coûte réellement que <strong>34 €</strong> après déduction
+                fiscale de 66 % (dans la limite légale en vigueur).
+              </div>
+
+              <a href="#acces" class="btn btn-emerald" style="width: 100%;">
+                Effectuer un don par Virement ou à la Mosquée
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. SECTION INSTITUT AS-SÂLAM : COURS D'ARABE, CORAN & CONFÉRENCES -->
+      <section class="section-block" id="institut">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-arabic-calligraphy" lang="ar" dir="rtl">معهد السلام لتعليم القرآن واللغة العربية</span>
+            <h2 class="section-title">L'Institut As-Sâlam &amp; Enseignement</h2>
+            <p class="section-desc">
+              Transmettre la langue arabe, la récitation juste du Saint Coran (Tajwîd) et les valeurs de paix et de
+              respect aux enfants, jeunes et adultes de Châtellerault.
+            </p>
+            <div class="arabesque-divider" aria-hidden="true">
+              <svg class="arabesque-khatam-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="5" y="5" width="14" height="14" />
+                <rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="courses-ledger">
+            <article class="course-row">
+              <div>
+                <span class="course-audience">Enfants &amp; Adolescents (dès 6 ans)</span>
+                <h3 class="course-title">École de Langue Arabe</h3>
+              </div>
+              <p class="course-desc">
+                Apprentissage progressif de la lecture, de l'écriture et de l'expression en langue arabe littéraire,
+                réparti par niveaux d'âge et de maîtrise dans nos salles de cours.
+              </p>
+              <div class="course-schedule-tag">Mercredi, Samedi &amp; Dimanche</div>
+            </article>
+
+            <article class="course-row">
+              <div>
+                <span class="course-audience">Jeunes, Hommes &amp; Femmes</span>
+                <h3 class="course-title">Mémorisation du Coran &amp; Tajwîd</h3>
+              </div>
+              <p class="course-desc">
+                Cercles d'apprentissage des règles de psalmodie (Tajwîd), mémorisation suivie (Hifdh) et révision
+                encadrée avec bienveillance.
+              </p>
+              <div class="course-schedule-tag">Séances Hebdomadaires</div>
+            </article>
+
+            <article class="course-row">
+              <div>
+                <span class="course-audience">Ouvert à tous les fidèles</span>
+                <h3 class="course-title">Rappels Spirituels &amp; Conférences</h3>
+              </div>
+              <p class="course-desc">
+                Assises de rappel après les prières, exégèse (Tafsîr), vie du Prophète (Sîra), cours d'éducation
+                spirituelle et veillées du mois béni de Ramadan.
+              </p>
+              <div class="course-schedule-tag">Vendredi (13h00) &amp; Week-end</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. SECTION ACCÈS CHÂTELLERAULT & FORMULAIRE DE CONTACT -->
+      <section class="section-block bg-warm" id="acces">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-arabic-calligraphy" lang="ar" dir="rtl">العنوان والتواصل — شاتيلرو</span>
+            <h2 class="section-title">Accès à Châtellerault &amp; Contact</h2>
+            <p class="section-desc">
+              La Mosquée de la Paix vous accueille tous les jours pour les 5 prières quotidiennes et la prière du
+              vendredi au 60 rue / avenue Paul Painlevé à Châtellerault.
+            </p>
+            <div class="arabesque-divider" aria-hidden="true">
+              <svg class="arabesque-khatam-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="5" y="5" width="14" height="14" />
+                <rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Carte d'adresse et Plan -->
+            <div class="address-card">
+              <div style="display: flex; align-items: center; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--gold-border);">
+                <img
+                  src="assets/logo-mosquee-paix.png"
+                  alt="Logo Mosquée de la Paix Châtellerault"
+                  style="width: 60px; height: 60px; object-fit: contain; mix-blend-mode: multiply;"
+                />
+                <div>
+                  <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--emerald-royal);">
+                    Mosquée de la Paix (As-Sâlam — مسجد السلام)
+                  </h3>
+                  <span style="font-size: 0.86rem; color: var(--ink-muted);">
+                    Association Islamique de Châtellerault
+                  </span>
+                </div>
+              </div>
+
+              <div class="address-item">
+                <h4>Adresse postale</h4>
+                <p>
+                  <strong>60 rue / avenue Paul Painlevé, 86100 Châtellerault</strong><br />
+                  À proximité de la gare SNCF de Châtellerault et des bords de Vienne.
+                </p>
+              </div>
+
+              <div class="address-item">
+                <h4>Téléphone &amp; Courriel</h4>
+                <p>
+                  Téléphone :
+                  <a href="tel:+33549219697" style="color: var(--emerald-royal); font-weight: 700;">05 49 21 96 97</a>
+                  <br />
+                  Email :
+                  <a href="mailto:XXX@gmail.com" style="color: var(--emerald-royal); font-weight: 700;">XXX@gmail.com</a>
+                </p>
+              </div>
+
+              <div class="address-item">
+                <h4>Horaires d'ouverture</h4>
+                <p>
+                  Ouverte <strong>30 minutes avant chaque prière</strong> (Fajr, Dhuhr, Asr, Maghrib, Isha) et dès
+                  12h00 le vendredi (Jumu'a à 13h00).
+                </p>
+              </div>
+
+              <iframe
+                class="map-iframe"
+                title="Carte d'accès à la Mosquée de la Paix - 60 avenue Paul Painlevé 86100 Châtellerault"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=0.5350%2C46.8110%2C0.5580%2C46.8240&amp;layer=mapnik&amp;marker=46.8178%2C0.5469"
+              ></iframe>
+
+              <div style="margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=60+Avenue+Paul+Painleve+86100+Chatellerault"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-emerald"
+                >
+                  Ouvrir l'itinéraire Google Maps
+                </a>
+                <a
+                  href="https://mawaqit.net/fr/m/essalem-chatellerault"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-alabaster"
+                >
+                  Horaires sur Mawaqit
+                </a>
+              </div>
+            </div>
+
+            <!-- Formulaire de Contact & Inscription Institut -->
+            <div class="form-card">
+              <h3 style="font-family: var(--font-serif); font-size: 1.65rem; color: var(--emerald-royal); margin-bottom: 6px;">
+                Contacter la Mosquée ou l'Institut
+              </h3>
+              <p style="font-size: 0.92rem; color: var(--ink-body); margin-bottom: 20px;">
+                Une question sur les cours d'arabe et de Coran, une demande de visite, un certificat ou un renseignement
+                religieux ? Écrivez-nous directement.
+              </p>
+
+              <form name="contact-mosquee-chatellerault" method="POST" data-netlify="true" id="mosqueeContactForm">
+                <input type="hidden" name="form-name" value="contact-mosquee-chatellerault" />
+
+                <div class="form-group">
+                  <label for="mName" class="field-label">Nom et Prénom *</label>
+                  <input type="text" id="mName" name="nom" class="field-input" required placeholder="Votre nom complet" />
+                </div>
+
+                <div class="form-group">
+                  <label for="mContact" class="field-label">Adresse e-mail ou Téléphone *</label>
+                  <input
+                    type="text"
+                    id="mContact"
+                    name="coordonnees"
+                    class="field-input"
+                    required
+                    placeholder="exemple@email.fr ou 06 00 00 00 00"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="mSubject" class="field-label">Objet de votre demande *</label>
+                  <select id="mSubject" name="objet" class="field-input" required>
+                    <option value="Inscription Cours Arabe / Coran">
+                      Inscription aux cours d'Arabe / Coran (Institut As-Sâlam)
+                    </option>
+                    <option value="Renseignement Prières / Ramadan">
+                      Renseignement sur les horaires ou le Ramadan
+                    </option>
+                    <option value="Don / Reçu fiscal">Don, Virement BPVF ou demande de reçu fiscal</option>
+                    <option value="Mariage religieux / Rencontrer l'Imam">
+                      Rencontrer l'Imam / Mariage religieux / Conseil
+                    </option>
+                    <option value="Autre demande">Autre question</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="mMessage" class="field-label">Votre message *</label>
+                  <textarea
+                    id="mMessage"
+                    name="message"
+                    rows="4"
+                    class="field-input"
+                    required
+                    placeholder="Précisez votre demande (Que la paix soit sur vous — As-salâmu 'alaykum)..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-emerald" style="width: 100%;">
+                  Envoyer le message à la Mosquée
+                </button>
+                <p
+                  id="contactFeedback"
+                  style="display: none; margin-top: 14px; font-size: 0.92rem; font-weight: 600; color: var(--emerald-royal);"
+                ></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 11. Pied de page officiel -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <img
+                src="assets/logo-mosquee-paix.png"
+                alt="Logo Mosquée de la Paix Châtellerault"
+                style="width: 54px; height: 54px; object-fit: contain; border-radius: 50%; background: var(--alabaster); padding: 4px; border: 1.5px solid var(--gold-leaf);"
+              />
+              <div>
+                <div
+                  style="font-family: var(--font-arabic); font-size: 1.35rem; color: var(--gold-pale);"
+                  lang="ar"
+                  dir="rtl"
+                >
+                  مسجد السلام — شاتيلرو
+                </div>
+                <strong style="font-family: var(--font-serif); font-size: 1.35rem; color: #ffffff;">
+                  Mosquée de la Paix (As-Sâlam)
+                </strong>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; max-width: 380px; color: rgba(247, 242, 231, 0.8);">
+              Association Islamique de Châtellerault • Lieu de culte, d'enseignement et de fraternité au 60 rue /
+              avenue Paul Painlevé, 86100 Châtellerault.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#horaires">Horaires de prière Mawaqit</a></li>
+              <li><a href="#visite">La Grande Salle &amp; le Mihrab</a></li>
+              <li><a href="#histoire">Histoire &amp; les 43 Photos des Travaux</a></li>
+              <li><a href="#dons">Soutenir la Mosquée (RIB BPVF)</a></li>
+              <li><a href="#institut">Institut d'Arabe &amp; Coran</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Coordonnées</h4>
+            <ul class="footer-links">
+              <li>60 rue Paul Painlevé, 86100 Châtellerault</li>
+              <li>Tél : <a href="tel:+33549219697">05 49 21 96 97</a></li>
+              <li>Email : <a href="mailto:XXX@gmail.com">XXX@gmail.com</a></li>
+              <li>Jumu'a : Vendredi à 13h00</li>
+              <li><a href="admin.html" style="color: var(--gold-pale);">Administration de la Mosquée</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© Mosquée de la Paix (As-Sâlam) de Châtellerault — Tous droits réservés.</span>
+          <span lang="ar" dir="rtl" style="font-family: var(--font-arabic); font-size: 1.1rem; color: var(--gold-pale);">
+            وَالسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- VISIONNEUSE PHOTO PLEIN ÉCRAN (AVEC NAVIGATION ← / → POUR LES 43 PHOTOS DES TRAVAUX) -->
+    <div class="photo-lightbox" id="photoLightbox" role="dialog" aria-modal="true" aria-label="Aperçu photo grand format">
+      <div class="lightbox-inner">
+        <button type="button" class="lightbox-close-btn" id="closePhotoLightbox" aria-label="Fermer">✕</button>
+        <div class="lightbox-stage">
+          <button
+            type="button"
+            class="lightbox-nav-btn"
+            id="lightboxPrevBtn"
+            aria-label="Photo précédente"
+            style="display: none;"
+          >
+            ‹
+          </button>
+          <img src="" alt="Aperçu grand format" id="lightboxTargetImg" />
+          <button
+            type="button"
+            class="lightbox-nav-btn"
+            id="lightboxNextBtn"
+            aria-label="Photo suivante"
+            style="display: none;"
+          >
+            ›
+          </button>
+        </div>
+        <div class="lightbox-caption" id="lightboxTargetCaption"></div>
+      </div>
+    </div>
+
+    <!-- MODE ÉCRAN TV MOSQUÉE (PLEIN ÉCRAN POUR SALLE DE PRIÈRE) -->
+    <div class="tv-mode-modal" id="tvModeModal" role="dialog" aria-modal="true" aria-label="Mode Écran Mosquée">
+      <div class="tv-top-bar">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <img
+            src="assets/logo-mosquee-paix.png"
+            alt="Logo Mosquée de la Paix"
+            style="width: 58px; height: 58px; object-fit: contain; border-radius: 50%; background: var(--alabaster); padding: 4px; border: 1.5px solid var(--gold-leaf);"
+          />
+          <div>
+            <div style="font-family: var(--font-arabic); font-size: 1.5rem; color: var(--gold-pale);" lang="ar" dir="rtl">
+              مسجد السلام — شاتيلرو
+            </div>
+            <strong style="font-family: var(--font-serif); font-size: 1.35rem;">
+              Mosquée de la Paix • 60 rue Paul Painlevé, Châtellerault
+            </strong>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <div class="tv-clock-giant" id="tvLiveClock">--:--:--</div>
+        </div>
+        <button type="button" class="btn btn-outline-gold" id="closeTvModeBtn">Quitter le Mode Écran</button>
+      </div>
+
+      <div class="tv-prayer-grid">
+        <div class="tv-prayer-box" data-tv-prayer="Fajr">
+          <div style="font-family: var(--font-arabic); font-size: 1.45rem; color: var(--gold-pale);">الفجر</div>
+          <div style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700;">Al-Fajr</div>
+          <span class="tv-prayer-time" id="tv-Fajr">06:33</span>
+          <span style="font-size: 0.9rem; opacity: 0.85;">Iqama : +10 min</span>
+        </div>
+        <div class="tv-prayer-box" data-tv-prayer="Sunrise">
+          <div style="font-family: var(--font-arabic); font-size: 1.45rem; color: var(--gold-pale);">الشروق</div>
+          <div style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700;">Chourouk</div>
+          <span class="tv-prayer-time" id="tv-Sunrise">07:48</span>
+          <span style="font-size: 0.9rem; opacity: 0.85;">Lever du soleil</span>
+        </div>
+        <div class="tv-prayer-box" data-tv-prayer="Dhuhr">
+          <div style="font-family: var(--font-arabic); font-size: 1.45rem; color: var(--gold-pale);">الظهر</div>
+          <div style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700;">Ad-Dhuhr</div>
+          <span class="tv-prayer-time" id="tv-Dhuhr">12:46</span>
+          <span style="font-size: 0.9rem; opacity: 0.85;">Iqama : +10 min</span>
+        </div>
+        <div class="tv-prayer-box" data-tv-prayer="Asr">
+          <div style="font-family: var(--font-arabic); font-size: 1.45rem; color: var(--gold-pale);">العصر</div>
+          <div style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700;">Al-Asr</div>
+          <span class="tv-prayer-time" id="tv-Asr">15:12</span>
+          <span style="font-size: 0.9rem; opacity: 0.85;">Iqama : +10 min</span>
+        </div>
+        <div class="tv-prayer-box" data-tv-prayer="Maghrib">
+          <div style="font-family: var(--font-arabic); font-size: 1.45rem; color: var(--gold-pale);">المغرب</div>
+          <div style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700;">Al-Maghrib</div>
+          <span class="tv-prayer-time" id="tv-Maghrib">17:40</span>
+          <span style="font-size: 0.9rem; opacity: 0.85;">Iqama : +5 min</span>
+        </div>
+        <div class="tv-prayer-box" data-tv-prayer="Isha">
+          <div style="font-family: var(--font-arabic); font-size: 1.45rem; color: var(--gold-pale);">العشاء</div>
+          <div style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700;">Al-Isha</div>
+          <span class="tv-prayer-time" id="tv-Isha">18:49</span>
+          <span style="font-size: 0.9rem; opacity: 0.85;">Iqama : +10 min</span>
+        </div>
+      </div>
+
+      <div style="text-align: center; padding-top: 16px; border-top: 1px solid var(--gold-border);">
+        <span style="color: var(--gold-pale); font-family: var(--font-serif); font-size: 1.2rem; font-weight: 700;">
+          Prière du Vendredi (Al-Jumu'a) : <span id="tvJumuaTime">13:00</span>
+        </span>
+        <span style="margin: 0 12px; opacity: 0.4;">|</span>
+        <span>Merci d'éteindre vos téléphones portables dans l'enceinte de la salle de prière.</span>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "mosquee-assalam-chatellerault",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "node --check app.js && node --check admin.js && node --check netlify/functions/mosquee-data.mjs && node --check netlify/functions/mawaqit-live.mjs && node --check scripts/build.mjs",
+    "test": "node --test tests/site.test.mjs",
+    "build": "node scripts/build.mjs",
+    "ci": "npm run lint && npm test && npm run build"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0",
+    "@netlify/functions": "^3.0.0"
+  }
+}

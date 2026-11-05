@@ -1,0 +1,57 @@
+{
+  "urgentBanner": {
+    "enabled": true,
+    "tag": "MAWAQIT • MOSQUÉE VERTE (ACTE 2)",
+    "message": "Panneaux solaires et batteries supplémentaires installés à la Mosquée de la Paix ! Jumu'a à 13h00 au 60 rue Paul Painlevé."
+  },
+  "prayerSettings": {
+    "jumuaTime": "13:00",
+    "iqamaOffsets": {
+      "Fajr": 10,
+      "Dhuhr": 10,
+      "Asr": 10,
+      "Maghrib": 5,
+      "Isha": 10
+    },
+    "customOverrides": {
+      "enabled": false,
+      "Fajr": "06:33",
+      "Sunrise": "07:48",
+      "Dhuhr": "12:46",
+      "Asr": "15:12",
+      "Maghrib": "17:40",
+      "Isha": "18:49"
+    }
+  },
+  "projectFund": {
+    "title": "Mosquée Verte (Acte 2) & Entretien de la Mosquée As-Sâlam",
+    "description": "Grâce à votre générosité, les panneaux solaires et batteries supplémentaires ont été installés avec un tableau de bord en temps réel à l'entrée des salles hommes et femmes. Vos dons financent la suite des travaux et les charges de la mosquée.",
+    "raisedAmount": 18500,
+    "goalAmount": 22000
+  },
+  "announcements": [
+    {
+      "id": 333740,
+      "category": "Mawaqit • Mosquée Verte (Acte 2)",
+      "date": "Point d'étape",
+      "title": "MOSQUÉE VERTE (ACTE 2) : Panneaux Solaires & Batteries",
+      "body": "Chères sœurs, chers frères, grâce à votre immense générosité et à la réussite de la collecte, nous avons pu acheter et installer les panneaux solaires et les batteries supplémentaires pour notre Mosquée de la Paix. Un tableau de bord est désormais à votre disposition à l'entrée des salles des hommes et des femmes pour suivre en temps réel la production solaire, notre consommation et l'état des batteries."
+    },
+    {
+      "id": 335948,
+      "category": "Vie Associative • Mawaqit",
+      "date": "Mosquée de la Paix",
+      "title": "Assemblée Générale Ordinaire (Bilan E2S, Travaux & Ramadan)",
+      "body": "Ordre du jour : Bilan moral et d'activité, bilan éducation (E2S) et formation, bilan travaux, bilan financier et perspectives (travaux à venir, Ramadan 2027).",
+      "image": "assets/affiche-ag-2026.png"
+    },
+    {
+      "id": 336419,
+      "category": "Horaires Mawaqit • Jumu'a 13h00",
+      "date": "Heure d'hiver",
+      "title": "Horaires d'Hiver & Salat Al-Jumu'a à 13h00",
+      "body": "Synchronisation directe avec Mawaqit (essalem-chatellerault) : la prière du Vendredi (Jumu'a) est célébrée à 13h00. Iqama : +10 min (Fajr, Dhuhr, Asr, Isha) et +5 min (Maghrib).",
+      "image": "assets/affiche-heure-hiver.png"
+    }
+  ]
+}

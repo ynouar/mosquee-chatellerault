@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administration — Mosquée As-Sâlam de Châtellerault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .admin-container {
+      max-width: 1120px;
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+    .admin-panel {
+      background: var(--stone-card);
+      border: 1.5px solid var(--cedar-deep);
+      box-shadow: 6px 6px 0 var(--brass-light);
+      padding: 30px;
+      margin-bottom: 28px;
+    }
+    .admin-panel h2 {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      color: var(--cedar-deep);
+      margin-bottom: 6px;
+    }
+    .login-box {
+      max-width: 440px;
+      margin: 80px auto;
+      background: var(--stone-card);
+      border: 1.5px solid var(--cedar-deep);
+      box-shadow: 8px 8px 0 var(--cedar-deep);
+      padding: 36px;
+      text-align: center;
+    }
+    .ann-edit-row {
+      border: 1px solid var(--rule);
+      background: var(--stone-bg);
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--cedar-deep);
+      color: var(--stone-bg);
+      border: 1.5px solid var(--brass);
+      padding: 14px 22px;
+      font-weight: 700;
+      display: none;
+      z-index: 400;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-lockup">
+        <img src="assets/logo-mosquee-paix.png" alt="Logo Mosquée de la Paix" class="brand-logo-img" />
+        <div class="brand-text-col">
+          <span class="brand-name-fr">Espace Responsables • Mosquée de la Paix</span>
+          <span class="brand-sub">Gestion des Horaires Iqama, Annonces & Projets (60 rue Paul Painlevé)</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-stone">← Retour au site public</a>
+        <button type="button" id="saveAdminBtn" class="btn btn-cedar">Enregistrer et Publier</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Connexion PIN -->
+  <div id="adminLoginGate" class="login-box">
+    <div style="font-family: var(--font-arabic); font-size: 2rem; color: var(--brass);">مسجد السلام</div>
+    <h1 style="font-family: var(--font-serif); font-size: 2rem; color: var(--cedar-deep); margin-bottom: 8px;">
+      Administration de la Mosquée
+    </h1>
+    <p style="font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 18px;">
+      Entrez le code d'accès responsable pour modifier les horaires d'Iqama, les annonces (Janaza, Aïd, Cours) et les projets.<br />
+      <strong>Code par défaut : <code>86100</code></strong>
+    </p>
+    <form id="adminLoginForm">
+      <input type="password" id="adminPinInput" class="field-input" value="86100" style="text-align: center; font-size: 1.2rem; letter-spacing: 0.2em; margin-bottom: 14px;" required />
+      <button type="submit" class="btn btn-cedar" style="width: 100%;">Accéder au tableau de bord</button>
+    </form>
+  </div>
+
+  <!-- Tableau de Bord -->
+  <main id="adminDashboard" class="admin-container" style="display: none;">
+
+    <!-- 1. Bandeau d'Annonce Urgente -->
+    <section class="admin-panel">
+      <h2>1. Bandeau d'Information en Haut du Site (Janaza, Ramadan, Aïd)</h2>
+      <p style="color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 16px;">
+        Idéal pour prévenir immédiatement les fidèles d'une Salat Janaza ou d'un changement d'horaire.
+      </p>
+      <div class="form-row-2">
+        <div>
+          <label class="field-label">Étiquette (ex: SALAT JANAZA, RAMADAN, VIE DE LA MOSQUÉE)</label>
+          <input type="text" id="ubTag" class="field-input" />
+        </div>
+        <div>
+          <label class="field-label">Afficher le bandeau ?</label>
+          <select id="ubEnabled" class="field-input">
+            <option value="true">Oui, afficher en haut du site</option>
+            <option value="false">Non, masquer le bandeau</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label class="field-label">Message du bandeau</label>
+        <input type="text" id="ubMessage" class="field-input" />
+      </div>
+    </section>
+
+    <!-- 2. Jumu'a & Décalages Iqama -->
+    <section class="admin-panel">
+      <h2>2. Heure de la Jumu'a & Délais d'Iqama (en minutes après l'Adhan)</h2>
+      <p style="color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 16px;">
+        Les heures d'Adhan se mettent à jour automatiquement chaque jour pour Châtellerault (60 av. Paul Painlevé). Vous pouvez régler ici l'heure de la Jumu'a et les minutes d'attente avant l'Iqama.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px;">
+        <div>
+          <label class="field-label">Jumu'a (Vendredi)</label>
+          <input type="text" id="psJumua" class="field-input" placeholder="14:00" />
+        </div>
+        <div>
+          <label class="field-label">Iqama Fajr (+ min)</label>
+          <input type="number" id="iqFajr" class="field-input" />
+        </div>
+        <div>
+          <label class="field-label">Iqama Dhuhr (+ min)</label>
+          <input type="number" id="iqDhuhr" class="field-input" />
+        </div>
+        <div>
+          <label class="field-label">Iqama Asr (+ min)</label>
+          <input type="number" id="iqAsr" class="field-input" />
+        </div>
+        <div>
+          <label class="field-label">Iqama Maghrib (+ min)</label>
+          <input type="number" id="iqMaghrib" class="field-input" />
+        </div>
+        <div>
+          <label class="field-label">Iqama Isha (+ min)</label>
+          <input type="number" id="iqIsha" class="field-input" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Jauge des Projets & Collecte -->
+    <section class="admin-panel">
+      <h2>3. Projet & Collecte de la Mosquée (Sadaqa / Charges)</h2>
+      <div class="form-row-2" style="margin-top: 14px;">
+        <div>
+          <label class="field-label">Titre de la collecte</label>
+          <input type="text" id="pfTitle" class="field-input" />
+        </div>
+        <div class="form-row-2" style="margin-bottom: 0;">
+          <div>
+            <label class="field-label">Montant collecté (€)</label>
+            <input type="number" id="pfRaised" class="field-input" />
+          </div>
+          <div>
+            <label class="field-label">Objectif (€)</label>
+            <input type="number" id="pfGoal" class="field-input" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <label class="field-label">Description du projet</label>
+        <textarea id="pfDesc" rows="2" class="field-input"></textarea>
+      </div>
+    </section>
+
+    <!-- 4. Annonces & Actualités -->
+    <section class="admin-panel">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h2>4. Annonces & Actualités de la Mosquée</h2>
+        <button type="button" id="addAnnouncementBtn" class="btn btn-stone">+ Ajouter une annonce</button>
+      </div>
+      <div id="adminAnnouncementsList"></div>
+    </section>
+
+    <div style="display: flex; justify-content: flex-end; gap: 12px;">
+      <button type="button" id="resetAdminBtn" class="btn btn-stone">Réinitialiser par défaut</button>
+      <button type="button" id="saveAdminBtnBottom" class="btn btn-cedar">Enregistrer et Publier sur le Site</button>
+    </div>
+
+  </main>
+
+  <div id="toastMsg" class="toast-msg">Modifications enregistrées !</div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
